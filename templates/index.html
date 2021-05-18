@@ -43,33 +43,33 @@
     <meta name="twitter:card" content=""/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet'
           type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
     <!-- Simple Line Icons -->
-    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.css' %}">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
     <!-- Magnific popup  -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="{% static 'js/respond.min.js' %}"></script>
     <![endif]-->
 
 </head>
@@ -82,19 +82,18 @@
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse"
                    data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="index.html">Wedding</a>
+                <a class="navbar-brand" href="{% url 'index' %}">Свадьба</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-                    <li><a href="#" data-nav-section="groom-bride"><span>Groom &amp; Bride</span></a></li>
+                    <li class="active"><a href="#" data-nav-section="home"><span>В начало</span></a></li>
+                    <li><a href="#" data-nav-section="groom-bride"><span>Жених и невеста</span></a></li>
                     <li><a href="#" data-nav-section="story"><span>Love Story</span></a></li>
-                    <li><a href="#" data-nav-section="greetings"><span>Greetings</span></a></li>
-                    <li><a href="#" data-nav-section="people"><span>People</span></a></li>
-                    <li><a href="#" data-nav-section="when-where"><span>When &amp; Where</span></a></li>
-                    <li><a href="#" data-nav-section="rsvp"><span>RSVP</span></a></li>
-                    <li><a href="#" data-nav-section="gallery"><span>Gallery</span></a></li>
-                    <li><a href="#" data-nav-section="blog"><span>Blog</span></a></li>
+                    <li><a href="#" data-nav-section="people"><span>Команды</span></a></li>
+                    <li><a href="#" data-nav-section="when-where"><span>Где и когда</span></a></li>
+                    <li><a href="#" data-nav-section="rsvp"><span>Как добраться?</span></a></li>
+                    <li><a href="#" data-nav-section="gallery"><span>Галерея</span></a></li>
+                    <li><a href="#" data-nav-section="blog"><span>Блог</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -105,17 +104,17 @@
 <div class="qbootstrap-hero" data-section="home">
     <div class="qbootstrap-overlay"></div>
     <div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5"
-         style="background-image: url(images/cover_bg_3.jpg);">
+         style="background-image: url(../static/images/cover_bg_3.jpg);">
         <div class="display-t">
             <div class="display-tc">
                 <div class="container">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="animate-box svg-sm colored">
-                            <img src="images/flaticon/svg/004-nature.svg" class="svg"
+                            <img src="{% static 'images/flaticon/svg/004-nature.svg' %}" class="svg"
                                  alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                            <h1 class="holder"><span>The Wedding of</span></h1>
-                            <h2>Louie Jie &amp; Marializa</h2>
-                            <p>02.12.2017</p>
+                            <h1 class="holder"><span>Свадьба</span></h1>
+                            <h2>Владислав &amp; Екатерина</h2>
+                            <p>11.09.2021</p>
                         </div>
                     </div>
                 </div>
@@ -129,49 +128,48 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 animate-box">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Are Getting Married</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima
-                        repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde veritatis
-                        pariatur. Commodi, nisi. Iusto, accusantium a.</p>
-                    <p><strong>on Dec 28, 2017 &mdash; Boracay, Philippines</strong></p>
+                    <h2>Мы женимся</h2>
+                    <p>И у нас будет самая лучшая свадьба на свете. </p>
+                    <p><strong>11 сентября 2021 &mdash; Харьков, Украина</strong></p>
                 </div>
             </div>
         </div>
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-                    <img src="images/groom.jpg" class="img-responsive"
+                    <img src="{% static 'images/groom.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Louie Jie L. Mahusay</h3>
-                    <span>Groom</span>
+                    <h3>Пономарёв Владислав</h3>
+                    <span>Жених</span>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><img
-                        src="images/flaticon/svg/003-luxury.svg" class="svg img-responsive"
+                        src="{% static 'images/flaticon/svg/003-luxury.svg' %}" class="svg img-responsive"
                         alt="Free HTML5 Bootstrap Template by QBootstrap.com"></h2></div>
                 <div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-                    <img src="images/bride.jpg" class="img-responsive"
+                    <img src="{% static 'images/bride.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Marializa R. Tabay</h3>
-                    <span>Bride</span>
+                    <h3>Козлова Еватерина</h3>
+                    <span>Невеста</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_2.jpg);"
+<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5"
+     style="background-image: url(../static/images/cover_bg_2.jpg);"
      data-section="wedding-day">
     <div class="overlay"></div>
     <div class="display-over">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-12 section-heading text-center svg-sm colored">
-                    <img src="images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg"
+                    <img src="{% static 'images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg' %}"
                          class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2 class="">The Wedding Day</h2>
-                    <span class="datewed">Saturday, Dec. 2, 2017</span>
+                    <h2 class="">День свадьбы</h2>
+                    <span class="datewed">Суббота. 11 сентября 2021</span>
                 </div>
             </div>
             <div class="row animate-box">
@@ -181,6 +179,7 @@
                         <span id="hours"></span>
                         <span id="minutes"></span>
                         <span id="seconds"></span>
+                        <span id="demo"></span>
                     </p>
                 </div>
             </div>
@@ -193,46 +192,42 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm-2 colored">
-                    <img src="images/flaticon/svg/002-wedding-couple.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/002-wedding-couple.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Groom &amp; Bride</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima
-                        repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde veritatis
-                        pariatur. Commodi, nisi. Iusto, accusantium a.</p>
+                    <h2>Жених &amp; Невеста</h2>
+                    <p>Небольшая информация о себе</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="couple groom text-center animate-box">
-                    <img src="images/groom.jpg" class="img-responsive"
+                    <img src="{% static 'images/groom.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
                     <div class="desc">
-                        <h2>Louie Jie L. Mahusay</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda vero totam eum,
-                            necessitatibus reprehenderit nisi, ratione neque aspernatur sapiente minus? Omnis neque
-                            labore distinctio aspernatur esse impedit laboriosam, veritatis dolorem!</p>
+                        <h2>Пономарёв Владислав</h2>
+                        <p>Жених всегда жизнерадостный и весёлый человек рад всех приветствовать на нашей свадьбе</p>
                         <ul class="social social-circle">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/vladyslav-ponomaryov-53b426119/"><i
+                                    class="icon-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/blackbirdvlad/"><i class="icon-instagram"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="couple bride text-center animate-box">
-                    <img src="images/bride.jpg" class="img-responsive"
+                    <img src="{% static 'images/bride.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
                     <div class="desc">
-                        <h2>Marializa R. Tabay</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda vero totam eum,
-                            necessitatibus reprehenderit nisi, ratione neque aspernatur sapiente minus? Omnis neque
-                            labore distinctio aspernatur esse impedit laboriosam, veritatis dolorem!</p>
+                        <h2>Козлова Екатерина</h2>
+                        <p>Самая лучшая и самая красивая женщина на планете земля. (Текст писал жених)</p>
                         <ul class="social social-circle">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kateryna-kozlova/"><i
+                                    class="icon-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/katerinakaterina05/"><i
+                                    class="icon-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -246,9 +241,9 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm-2">
-                    <img src="images/flaticon/svg/003-luxury.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/003-luxury.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Our Love Story</h2>
+                    <h2>Наша лав стори</h2>
                 </div>
             </div>
         </div>
@@ -256,58 +251,58 @@
             <div class="col-md-12">
                 <ul class="timeline animate-box">
                     <li class="animate-box">
-                        <div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+                        <div class="timeline-badge" style="background-image:url(../static/images/couple-1.jpg);"></div>
                         <div class="timeline-panel">
                             <div class="overlay"></div>
                             <div class="timeline-heading">
-                                <h3 class="timeline-title">First We Meet</h3>
-                                <span class="date">June 10, 2017</span>
+                                <h3 class="timeline-title">Мы познакомились</h3>
+                                <span class="date">4 Июня 2020</span>
                             </div>
                             <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in .</p>
+                                <p>Познакомились на почве того, что оба преподаём на курсах, и всего раз списавшись, уже
+                                    не смогли больше этого не делать </p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted animate-box">
-                        <div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+                        <div class="timeline-badge" style="background-image:url(../static/images/couple-2.jpg);"></div>
                         <div class="timeline-panel">
                             <div class="overlay overlay-2"></div>
                             <div class="timeline-heading">
-                                <h3 class="timeline-title">First Date</h3>
-                                <span class="date">June 10, 2017</span>
+                                <h3 class="timeline-title">Первое свидание</h3>
+                                <span class="date">8 Июня 2020</span>
                             </div>
                             <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in .</p>
+                                <p>Мы были в "трогательном" зоопарке, и это было очень мило, мы оба любим животных, у
+                                    жениха кот, у невесты пёс</p>
                             </div>
                         </div>
                     </li>
                     <li class="animate-box">
-                        <div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+                        <div class="timeline-badge" style="background-image:url(../static/images/couple-3.jpg);"></div>
                         <div class="timeline-panel">
                             <div class="overlay"></div>
                             <div class="timeline-heading">
-                                <h3 class="timeline-title">In A Relationship</h3>
-                                <span class="date">June 14, 2017</span>
+                                <h3 class="timeline-title">В отношениях</h3>
+                                <span class="date">15 Июня 2020</span>
                             </div>
                             <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in .</p>
+                                <p>С тех пор мы побывали в нескольких странах и в куче крутых мест, и не собираемся
+                                    останавливаться</p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted animate-box">
-                        <div class="timeline-badge" style="background-image:url(images/couple-4.jpg);"></div>
+                        <div class="timeline-badge" style="background-image:url(../static/images/couple-4.jpg);"></div>
                         <div class="timeline-panel">
                             <div class="overlay overlay-2"></div>
                             <div class="timeline-heading">
-                                <h3 class="timeline-title">We're Engaged</h3>
-                                <span class="date">Sept. 01, 2017</span>
+                                <h3 class="timeline-title">Мы обручены</h3>
+                                <span class="date"> 4 Июля 2020</span>
                             </div>
                             <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in .</p>
+                                <p>Всего через месяц жених понял, что не может без неё, а она сказала "да", потому что
+                                    не может без него.</p>
                             </div>
                         </div>
                     </li>
@@ -319,16 +314,25 @@
 
 
 <div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings"
-     data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+     data-stellar-background-ratio="0.5" style="background-image: url(../static/images/cover_bg_1.jpg);">
     <div class="overlay"></div>
     <div class="container">
+
+
         <div class="row animate-box">
             <div class="col-md-12 section-heading text-center svg-sm colored">
-                <img src="images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg"
+                <img src="{% static 'images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg' %}"
                      class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                <h2 class="">Sweet Messages</h2>
+                <h2 class="">Цвета нашей свадьбы</h2>
             </div>
         </div>
+        <div class="row gradient-flex animate-box">
+            <div class="gradient-1 gradient-size gradient-left"></div>
+        <div class="gradient-2 gradient-size"></div>
+        <div class="gradient-3 gradient-size"></div>
+        <div class="gradient-4 gradient-size gradient-right"></div>
+        </div>
+        <!--
         <div class="row">
             <div class="col-md-4 animate-box">
                 <div class="box-testimony ">
@@ -367,6 +371,7 @@
 
             </div>
         </div>
+        -->
     </div>
 </div>
 
@@ -375,84 +380,69 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>The Groomsmen</h2>
+                    <h2>Команда жениха</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 subtext  ">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</h3>
+                            <h3>Трое друзей которые будут отдуваться за жениха во всех конкурсах</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row row-bottom-padded-lg">
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/groom-men-1.jpg" class="img-responsive"
+                    <img src="{% static 'images/groom-man-1.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Ian Bill</h3>
+                    <h3>Денис</h3>
                 </div>
             </div>
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/groom-men-2.jpg" class="img-responsive"
+                    <img src="{% static 'images/groom-man-2.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>George Smith</h3>
+                    <h3>Никита</h3>
                 </div>
             </div>
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/groom-men-3.jpg" class="img-responsive"
+                    <img src="{% static 'images/groom-man-3.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Brian Thompson</h3>
-                </div>
-            </div>
-            <div class="col-md-3 text-center animate-box">
-                <div class="groom-men">
-                    <img src="images/groom-men-4.jpg" class="img-responsive"
-                         alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>David Howard</h3>
+                    <h3>Евгений</h3>
                 </div>
             </div>
         </div>
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>The Bridesmaid</h2>
+                    <h2>Команда невесты</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/bridesmaid-1.jpg" class="img-responsive"
+                    <img src="{% static 'images/bridesmaid-1.png' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Angel Thomas</h3>
+                    <h3>Валерия</h3>
                 </div>
             </div>
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/bridesmaid-2.jpg" class="img-responsive"
+                    <img src="{% static 'images/bridesmaid-2.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Kathy Shol</h3>
+                    <h3>Лилия</h3>
                 </div>
             </div>
-            <div class="col-md-3 text-center animate-box">
+            <div class="col-md-4 text-center animate-box">
                 <div class="groom-men">
-                    <img src="images/bridesmaid-3.jpg" class="img-responsive"
+                    <img src="{% static 'images/bridesmaid-3.png' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Rose Mel</h3>
-                </div>
-            </div>
-            <div class="col-md-3 text-center animate-box">
-                <div class="groom-men">
-                    <img src="images/bridesmaid-4.jpg" class="img-responsive"
-                         alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h3>Ann Hathway</h3>
+                    <h3>Алина</h3>
                 </div>
             </div>
         </div>
@@ -464,13 +454,13 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Ceremony &amp; Party</h2>
+                    <h2>Церемония &amp; Вечеринка</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 subtext">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</h3>
+                            <h3>Церемонию и вечеринку мы решили проводить в загороднем комплексе <a
+                                    href="https://www.penates-kharkiv.com.ua/">ГД Пенаты</a></h3>
                         </div>
                     </div>
                 </div>
@@ -479,9 +469,9 @@
         <div class="row row-bottom-padded-md">
             <div class="col-md-6 text-center animate-box">
                 <div class="wedding-events">
-                    <div class="ceremony-bg" style="background-image: url(images/wed-ceremony.jpg);"></div>
+                    <div class="ceremony-bg" style="background-image: url(../static/images/wed-ceremony.jpg);"></div>
                     <div class="desc">
-                        <h3>Wedding Ceremony</h3>
+                        <h3>Свадебная церемония</h3>
                         <div class="row">
                             <div class="col-md-2 col-md-push-5">
                                 <div class="icon-tip">
@@ -491,30 +481,27 @@
                             <div class="col-md-5 col-md-pull-1">
                                 <div class="date">
                                     <i class="icon-calendar"></i>
-                                    <span>Saturday</span>
-                                    <span>02 Dec. 2017</span>
+                                    <span>Суббота</span>
+                                    <span>11 Сентября 2021</span>
                                 </div>
                             </div>
                             <div class="col-md-5 col-md-pull-1">
                                 <div class="date">
                                     <i class="icon-clock2"></i>
-                                    <span>10:00 AM</span>
-                                    <span>11:00 AM</span>
+                                    <span>16:00</span>
+                                    <span>17:00</span>
                                 </div>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+                        <p>Церемония пройдёт на улице, так что ждём вас в удобной обуви и в отличном настроении. Ждём вас по возможности в цветах нашей свадьбы</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 text-center animate-box">
                 <div class="wedding-events">
-                    <div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div>
+                    <div class="ceremony-bg" style="background-image: url(../static/images/wed-party.jpg);"></div>
                     <div class="desc">
-                        <h3>Wedding Party</h3>
+                        <h3>Вечеринка</h3>
                         <div class="row">
                             <div class="col-md-2 col-md-push-5">
                                 <div class="icon-tip">
@@ -524,29 +511,27 @@
                             <div class="col-md-5 col-md-pull-1">
                                 <div class="date">
                                     <i class="icon-calendar"></i>
-                                    <span>Saturday</span>
-                                    <span>02 Dec. 2017</span>
+                                    <span>Суббота</span>
+                                    <span>11 Сентября 2021</span>
                                 </div>
                             </div>
                             <div class="col-md-5 col-md-pull-1">
                                 <div class="date">
                                     <i class="icon-clock2"></i>
-                                    <span>10:00 AM</span>
-                                    <span>11:00 AM</span>
+                                    <span>17:00</span>
+                                    <span>Как пойдёт</span>
                                 </div>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+                        <p>Вечеринка так же пройдет на улице. Вас ждут, выездной бар, кенди бар, кавер группа, замечательный ведущий с интересными
+                            конкурсами</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div id="map" class="qbootstrap-map"></div>
+                <div id="map" class="qbootstrap-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.1338445525394!2d36.33363781566643!3d49.59522537936657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127612a1de9fa2f%3A0xc50878448d741686!2z0JPQvtGB0YLRjNC-0LLQuNC5INC00ZbQvCAi0J_QtdC90LDRgtC4Ig!5e0!3m2!1sru!2sua!4v1621344340543!5m2!1sru!2sua" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
             </div>
         </div>
     </div>
@@ -555,43 +540,21 @@
 
 
 <div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5"
-     style="background-image: url(images/cover_bg_1.jpg);">
+     style="background-image: url(../static/images/cover_bg_1.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>You Are Invited</h2>
+                    <h2>Трансферы</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 subtext">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</h3>
+                            <h3>Когда я буду знать о том от куда и в какое время будут организованные трансферы, я добавлю сюда карты :)</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row animate-box">
-            <div class="col-md-10 col-md-offset-1">
-                <form class="form-inline">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <button type="submit" class="btn btn-default btn-block">I am Attending</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
@@ -602,13 +565,12 @@
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
+                    <img src="{% static 'images/flaticon/svg/005-two.svg' %}" class="svg"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Our Selfie Photos</h2>
+                    <h2>Наши фоточки</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 subtext">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</h3>
+                            <h3>Просто что бы вам было что посмотреть</h3>
                         </div>
                     </div>
                 </div>
@@ -619,138 +581,71 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup image-popup" href="images/gallery-1.jpg"><img
-                            src="images/gallery-1.jpg" class="img-responsive"
+                    <a class="gallery-img image-popup image-popup" href="{% static 'images/gallery-1.jpg' %}"><img
+                            src="{% static 'images/gallery-1.jpg' %}" class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-10.jpg"><img src="images/gallery-10.jpg"
-                                                                                         class="img-responsive"
-                                                                                         alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-10.jpg' %}"><img
+                            src="{% static 'images/gallery-10.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-6.jpg"><img src="images/gallery-6.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-6.jpg' %}"><img
+                            src="{% static 'images/gallery-6.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-2.jpg' %}"><img
+                            src="{% static 'images/gallery-2.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-5.jpg"><img src="images/gallery-5.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-5.jpg' %}"><img
+                            src="{% static 'images/gallery-5.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-7.jpg"><img src="images/gallery-7.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-7.jpg' %}"><img
+                            src="{% static 'images/gallery-7.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-3.jpg"><img src="images/gallery-3.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-3.jpg' %}"><img
+                            src="{% static 'images/gallery-3.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-4.jpg"><img src="images/gallery-4.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-4.jpg' %}"><img
+                            src="{% static 'images/gallery-4.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-8.jpg"><img src="images/gallery-8.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-8.jpg' %}"><img
+                            src="{% static 'images/gallery-8.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="images/gallery-9.jpg"><img src="images/gallery-9.jpg"
-                                                                                        class="img-responsive"
-                                                                                        alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+                    <a class="gallery-img image-popup" href="{% static 'images/gallery-9.jpg' %}"><img
+                            src="{% static 'images/gallery-9.jpg' %}"
+                            class="img-responsive"
+                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div id="qbootstrap-press" data-section="blog">
-    <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="images/flaticon/svg/005-two.svg" class="svg"
-                         alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2>Our Blog</h2>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 subtext">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="qbootstrap-press-item animate-box">
-                    <div class="qbootstrap-press-img" style="background-image: url(images/blog-1.jpg)">
-                    </div>
-                    <div class="qbootstrap-press-text">
-                        <h3 class="h2 qbootstrap-press-title">The Wedding Party <span class="qbootstrap-border"></span>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique
-                            suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="qbootstrap-press-item animate-box">
-                    <div class="qbootstrap-press-img" style="background-image: url(images/blog-2.jpg)">
-                    </div>
-                    <div class="qbootstrap-press-text">
-                        <h3 class="h2 qbootstrap-press-title">Wedding Party <span class="qbootstrap-border"></span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique
-                            suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="qbootstrap-press-item animate-box">
-                    <div class="qbootstrap-press-img" style="background-image: url(images/blog-3.jpg);">
-                    </div>
-                    <div class="qbootstrap-press-text">
-                        <h3 class="h2 qbootstrap-press-title">Venue Wedding <span class="qbootstrap-border"></span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique
-                            suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="qbootstrap-press-item animate-box">
-                    <div class="qbootstrap-press-img" style="background-image: url(images/blog-4.jpg);">
-                    </div>
-                    <div class="qbootstrap-press-text">
-                        <h3 class="h2 qbootstrap-press-title">About The Couple <span class="qbootstrap-border"></span>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique
-                            suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                        <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
@@ -778,26 +673,26 @@
 
 
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
 <!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
 <!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
 <!-- YTPlayer -->
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
 <!-- Flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
+<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
 <!-- Owl Carousel -->
-<script src="js/owl.carousel.min.js"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
 <!-- Parallax -->
-<script src="js/jquery.stellar.min.js"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
 <!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
 <!-- Main JS (Do not remove) -->
-<script src="js/main.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
