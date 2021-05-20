@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -54,13 +53,15 @@
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <!-- Icomoon Icon Fonts-->
     <style>
+
         @font-face {
-            font-family: 'icomoon';
-            src: url("{% static 'fonts/icomoon/icomoon.eot' %}&srf3rx");
-            src: url("{% static 'fonts/icomoon/icomoon.eot' %}&srf3rx#iefix") format("embedded-opentype");
-            url("{% static 'fonts/icomoon/icomoon.ttf' %}&srf3rx") format("truetype");
-            url("{% static 'fonts/icomoon/icomoon.woff' %}&srf3rx") format("woff");
-            url("{% static 'fonts/icomoon/icomoon.svg' %}&srf3rx#icomoon") format("svg");
+            font-family: 'simple-line-icons';
+            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}&#iefix&v=2.2.2') format('embedded-opentype'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.ttf' %}&v=2.2.2') format('truetype');
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff2' %}&v=2.2.2') format('woff2'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff' %}&v=2.2.2') format('woff'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.svg' %}&v=2.2.2#simple-line-icons') format('svg');
             font-weight: normal;
             font-style: normal;
         }
@@ -70,12 +71,12 @@
     <style>
         @font-face {
             font-family: 'simple-line-icons';
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}');
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}&#iefix&v=2.2.2') format('embedded-opentype');
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.ttf' %}&v=2.2.2') format('truetype');
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff2' %}&v=2.2.2') format('woff2');
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff' %}&v=2.2.2') format('woff');
-            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.svg' %}&v=2.2.2#simple-line-icons') format('svg');
+            src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}&#iefix&v=2.2.2') format('embedded-opentype'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.ttf' %}&v=2.2.2') format('truetype'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff2' %}&v=2.2.2') format('woff2'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff' %}&v=2.2.2') format('woff'),
+            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.svg' %}&v=2.2.2#simple-line-icons') format('svg');
             font-weight: normal;
             font-style: normal;
         }
