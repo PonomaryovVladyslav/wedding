@@ -1841,6 +1841,13 @@ h1, h2, h3, h4, h5, h6 {
         float: none;
         width: 100%;
     }
+    .mobile-padding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mobile-font-size{
+        font-size: 25px !important;
+    }
 }
 
 .row-bottom-padded-lg {
