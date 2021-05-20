@@ -59,9 +59,9 @@
             src: url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}'),
             url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.eot' %}&#iefix&v=2.2.2') format('embedded-opentype'),
             url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.ttf' %}&v=2.2.2') format('truetype');
-            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff2' %}&v=2.2.2') format('woff2'),
-            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff' %}&v=2.2.2') format('woff'),
-            url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.svg' %}&v=2.2.2#simple-line-icons') format('svg');
+        url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff2' %}&v=2.2.2') format('woff2'),
+        url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.woff' %}&v=2.2.2') format('woff'),
+        url('{% static 'fonts/simple-line-icons/Simple-Line-Icons.svg' %}&v=2.2.2#simple-line-icons') format('svg');
             font-weight: normal;
             font-style: normal;
         }
@@ -91,7 +91,6 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
 
     <!-- Modernizr JS -->
     <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
@@ -134,7 +133,7 @@
          style="background-image: url('{% static 'images/cover_bg_3.jpg' %}');">
         <div class="display-t">
             <div class="display-tc">
-                <div class="container">
+                <div class="container" style="padding: 0">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="animate-box svg-sm colored">
                             <img src="{% static 'images/flaticon/svg/004-nature.svg' %}" class="svg"
@@ -151,7 +150,7 @@
 </div>
 
 <div id="qbootstrap-couple" class="qbootstrap-section-gray">
-    <div class="container mobile-padding">
+    <div class="container">
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 animate-box">
                 <div class="col-md-12 text-center section-heading svg-sm colored">
@@ -164,12 +163,11 @@
             </div>
         </div>
         <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center mobile-padding">
+            <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="col-md-5 col-sm-5 col-xs-5 nopadding">
                     <img src="{% static 'images/groom.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
                     <h3 class="mobile-font-size">Пономарёв Владислав</h3>
-                    <span>Жених</span>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><img
                         src="{% static 'images/flaticon/svg/003-luxury.svg' %}" class="svg img-responsive"
@@ -178,7 +176,6 @@
                     <img src="{% static 'images/bride.jpg' %}" class="img-responsive"
                          alt="Free HTML5 Bootstrap Template by QBootstrap.com">
                     <h3 class="mobile-font-size">Козлова Екатерина</h3>
-                    <span>Невеста</span>
                 </div>
             </div>
         </div>
@@ -200,14 +197,22 @@
                 </div>
             </div>
             <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="countdown">
-                        <span id="days"></span>
-                        <span id="hours"></span>
-                        <span id="minutes"></span>
-                        <span id="seconds"></span>
-                        <span id="demo"></span>
-                    </p>
+                <div class="text-center counter">
+                    <div class="countdown">
+                        <div class="counter-days">
+                            <span id="days"></span>
+                            <span id="hours"></span>
+                        </div>
+                        <div class="counter-minutes">
+                            <span id="minutes"></span>
+                            <span id="seconds"></span>
+                        </div>
+                        <div>
+                            <span style="display: none" id="demo"></span>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -359,7 +364,7 @@
 
         <div class="row">
             <div class="col-md-10 col-md-offset-1 subtext  ">
-                <h3 style="color: #ff847e;">Очень хотелось бы, что бы вы были одеты в указанной цветовой гамме</h3>
+                <h3 style="color: #ff847e; text-align: center">Очень хотелось бы, что бы вы были одеты в указанной цветовой гамме</h3>
             </div>
         </div>
     </div>
@@ -531,7 +536,6 @@
         </div>
     </div>
 </div>
-</div>
 
 
 <div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5"
@@ -546,8 +550,8 @@
                     <h2>Трансферы</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 subtext">
-                            <h3>Когда мы будем знать о том откуда и в какое время будут организованные трансферы, я
-                                добавлю сюда карты :)</h3>
+                            <h3>Когда мы будем знать о том откуда и в какое время будут организованные трансферы, мы
+                                добавим сюда карты :)</h3>
                         </div>
                     </div>
                 </div>
@@ -573,75 +577,68 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
+        <div class="owl-carousel">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup image-popup" href="{% static 'images/gallery-1.jpg' %}"><img
+                    <a class="gallery-img" href="{% static 'images/gallery-1.jpg' %}"><img
                             src="{% static 'images/gallery-1.jpg' %}" class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-10.jpg' %}"><img
+                    <a class="gallery-img" href="{% static 'images/gallery-10.jpg' %}"><img
                             src="{% static 'images/gallery-10.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-6.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-6.jpg' %}"><img
                             src="{% static 'images/gallery-6.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-2.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-2.jpg' %}"><img
                             src="{% static 'images/gallery-2.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-5.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-5.jpg' %}"><img
                             src="{% static 'images/gallery-5.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-7.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-7.jpg' %}"><img
                             src="{% static 'images/gallery-7.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-3.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-3.jpg' %}"><img
                             src="{% static 'images/gallery-3.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-4.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-4.jpg' %}"><img
                             src="{% static 'images/gallery-4.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
+{#                <div class="gallery animate-box">#}
+{#                    <a class="gallery-img " href="{% static 'images/gallery-8.jpg' %}"><img#}
+{#                            src="{% static 'images/gallery-8.jpg' %}"#}
+{#                            class="img-responsive"#}
+{#                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>#}
+{#                </div>#}
                 <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-8.jpg' %}"><img
-                            src="{% static 'images/gallery-8.jpg' %}"
-                            class="img-responsive"
-                            alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-                </div>
-                <div class="gallery animate-box">
-                    <a class="gallery-img image-popup" href="{% static 'images/gallery-9.jpg' %}"><img
+                    <a class="gallery-img " href="{% static 'images/gallery-9.jpg' %}"><img
                             src="{% static 'images/gallery-9.jpg' %}"
                             class="img-responsive"
                             alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
                 </div>
-            </div>
         </div>
     </div>
 </div>
