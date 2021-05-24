@@ -1,0 +1,48 @@
+[2021-05-24 08:40:19 +0000] [23084] [INFO] Starting gunicorn 20.1.0
+[2021-05-24 08:40:19 +0000] [23084] [INFO] Listening at: unix:/home/ubuntu/wedding/run/gunicorn.sock (23084)
+[2021-05-24 08:40:19 +0000] [23084] [INFO] Using worker: sync
+[2021-05-24 08:40:19 +0000] [23094] [INFO] Booting worker with pid: 23094
+[2021-05-24 08:40:19 +0000] [23095] [INFO] Booting worker with pid: 23095
+[2021-05-24 08:40:20 +0000] [23096] [INFO] Booting worker with pid: 23096
+[2021-05-24 08:52:15 +0000] [23084] [INFO] Handling signal: term
+[2021-05-24 08:52:15 +0000] [23094] [INFO] Worker exiting (pid: 23094)
+[2021-05-24 08:52:15 +0000] [23095] [INFO] Worker exiting (pid: 23095)
+[2021-05-24 08:52:15 +0000] [23096] [INFO] Worker exiting (pid: 23096)
+[2021-05-24 08:52:15 +0000] [23084] [WARNING] Worker with pid 23095 was terminated due to signal 15
+[2021-05-24 08:52:15 +0000] [23084] [WARNING] Worker with pid 23096 was terminated due to signal 15
+[2021-05-24 08:52:15 +0000] [23084] [WARNING] Worker with pid 23094 was terminated due to signal 15
+[2021-05-24 08:52:15 +0000] [23084] [INFO] Shutting down: Master
+[2021-05-24 08:52:15 +0000] [23216] [INFO] Starting gunicorn 20.1.0
+[2021-05-24 08:52:15 +0000] [23216] [INFO] Listening at: unix:/home/ubuntu/wedding/run/gunicorn.sock (23216)
+[2021-05-24 08:52:15 +0000] [23216] [INFO] Using worker: sync
+[2021-05-24 08:52:15 +0000] [23229] [INFO] Booting worker with pid: 23229
+[2021-05-24 08:52:15 +0000] [23230] [INFO] Booting worker with pid: 23230
+[2021-05-24 08:52:15 +0000] [23231] [INFO] Booting worker with pid: 23231
+[2021-05-24 10:11:15 +0000] [23216] [INFO] Handling signal: term
+[2021-05-24 10:11:15 +0000] [23229] [INFO] Worker exiting (pid: 23229)
+[2021-05-24 10:11:15 +0000] [23230] [INFO] Worker exiting (pid: 23230)
+[2021-05-24 10:11:15 +0000] [23231] [INFO] Worker exiting (pid: 23231)
+[2021-05-24 10:11:15 +0000] [23216] [WARNING] Worker with pid 23229 was terminated due to signal 15
+[2021-05-24 10:11:15 +0000] [23216] [WARNING] Worker with pid 23231 was terminated due to signal 15
+[2021-05-24 10:11:15 +0000] [23216] [WARNING] Worker with pid 23230 was terminated due to signal 15
+[2021-05-24 10:11:15 +0000] [23216] [INFO] Shutting down: Master
+[2021-05-24 10:11:16 +0000] [31483] [INFO] Starting gunicorn 20.1.0
+[2021-05-24 10:11:16 +0000] [31483] [INFO] Listening at: unix:/home/ubuntu/wedding/run/gunicorn.sock (31483)
+[2021-05-24 10:11:16 +0000] [31483] [INFO] Using worker: sync
+[2021-05-24 10:11:16 +0000] [31496] [INFO] Booting worker with pid: 31496
+[2021-05-24 10:11:16 +0000] [31497] [INFO] Booting worker with pid: 31497
+[2021-05-24 10:11:16 +0000] [31498] [INFO] Booting worker with pid: 31498
+[2021-05-24 10:25:47 +0000] [31483] [INFO] Handling signal: term
+[2021-05-24 10:25:47 +0000] [31496] [INFO] Worker exiting (pid: 31496)
+[2021-05-24 10:25:47 +0000] [31497] [INFO] Worker exiting (pid: 31497)
+[2021-05-24 10:25:47 +0000] [31498] [INFO] Worker exiting (pid: 31498)
+[2021-05-24 10:25:47 +0000] [31483] [WARNING] Worker with pid 31496 was terminated due to signal 15
+[2021-05-24 10:25:47 +0000] [31483] [WARNING] Worker with pid 31498 was terminated due to signal 15
+[2021-05-24 10:25:47 +0000] [31483] [WARNING] Worker with pid 31497 was terminated due to signal 15
+[2021-05-24 10:25:47 +0000] [31483] [INFO] Shutting down: Master
+[2021-05-24 10:25:47 +0000] [31558] [INFO] Starting gunicorn 20.1.0
+[2021-05-24 10:25:47 +0000] [31558] [INFO] Listening at: unix:/home/ubuntu/wedding/run/gunicorn.sock (31558)
+[2021-05-24 10:25:47 +0000] [31558] [INFO] Using worker: sync
+[2021-05-24 10:25:47 +0000] [31571] [INFO] Booting worker with pid: 31571
+[2021-05-24 10:25:47 +0000] [31572] [INFO] Booting worker with pid: 31572
+[2021-05-24 10:25:47 +0000] [31573] [INFO] Booting worker with pid: 31573
