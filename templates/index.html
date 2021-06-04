@@ -546,9 +546,12 @@
         <div class="owl-carousel">
             {% for image in images %}
                 <div class="gallery animate-box">
-                    <a class="image-popup gallery-img" href="{{ image.image_cropped.url }}" data-mfp-src="{{ image.image.url }}"><img
-                            src="{{ image.image_cropped.url }}" class="img-responsive"
-                            alt="{{ image.alt }}"></a>
+                    {% if image.image and image.image_cropped %}
+                        <a class="image-popup gallery-img" href="{{ image.image_cropped.url }}"
+                           data-mfp-src="{{ image.image.url }}"><img
+                                src="{{ image.image_cropped.url }}" class="img-responsive"
+                                alt="{{ image.alt }}"></a>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>
