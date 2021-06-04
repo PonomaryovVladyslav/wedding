@@ -546,8 +546,8 @@
         <div class="owl-carousel">
             {% for image in images %}
                 <div class="gallery animate-box">
-                    <a class="gallery-img" href="{{ image.image.url }}"><img
-                            src="{{ image.image.url }}" class="img-responsive"
+                    <a class="gallery-img" href="{{ image.image_cropped.url }}"><img
+                            src="{{ image.image_cropped.url }}" class="img-responsive"
                             alt="{{ image.alt }}"></a>
                 </div>
             {% endfor %}

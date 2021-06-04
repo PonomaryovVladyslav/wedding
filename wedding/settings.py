@@ -38,9 +38,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.cache.UpdateCacheMiddleware',
+    # 'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -73,9 +73,9 @@ WSGI_APPLICATION = 'wedding.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('name'),
-        'USER': os.environ.get('user'),
-        'PASSWORD': os.environ.get('password'),
+        'NAME': os.environ.get('name', 'weddingdb'),
+        'USER': os.environ.get('user', 'weddinguser'),
+        'PASSWORD': os.environ.get('password', 'weddingpass'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -166,6 +166,8 @@ LOGGING = {
         },
     }
 }
+
+CROP_HEIGHT = 250
 
 if os.environ.get('PROD'):
     try:

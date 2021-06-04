@@ -1,0 +1,5 @@
+/media
+/.idea
+db.sqlite3
+/venv
+wedding.log
