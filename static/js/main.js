@@ -297,6 +297,7 @@
         items: 1,
         loop: true,
         autoplay: true,
+        lazyLoad: true,
         responsive: {
             480: {items: 1}, // from zero to 480 screen width 1 items
             768: {items: 3}, // from 480 screen widthto 768 3 items
@@ -326,6 +327,8 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
+
+
 
 
     // Document on load.
