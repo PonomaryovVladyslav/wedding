@@ -123,8 +123,10 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    "static"
+    "staticfiles"
 ]
+
+STATIC_ROOT = 'static'
 
 CACHES = {
     'default': {
