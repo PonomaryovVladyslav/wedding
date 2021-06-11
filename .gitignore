@@ -1,5 +1,10 @@
-/media
-/.idea
+/media/*
+/.idea/*
 db.sqlite3
-/venv
-wedding.log
+/venv/*
+/wedding.log
+*/__pycache__/*
+/__pycache__/*
+*/*/__pycache__/*
+*/run/*
+/run/*
