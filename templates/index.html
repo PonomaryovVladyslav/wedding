@@ -543,15 +543,21 @@
     </div>
 
     <div class="container-fluid">
-    <div class="nav-arrows" id="nav-arrows">
-        <div class="arrow-border" id="click-previous">
+{#    <div class="nav-arrows" id="nav-arrows">#}
+{#        <div class="arrow-border" id="click-previous">#}
+{#            <i class='fa fa-2x fa-chevron-left arrow-color'></i>#}
+{#        </div>#}
+{#        <div class="arrow-border" id="click-forward">#}
+{#            <i class='fa fa-2x fa-chevron-right arrow-color'></i>#}
+{#        </div>#}
+{#    </div>#}
+        <div class="arrow-border animate-box" id="click-previous">
             <i class='fa fa-2x fa-chevron-left arrow-color'></i>
         </div>
-        <div class="arrow-border" id="click-forward">
+        <div class="arrow-border animate-box" id="click-forward">
             <i class='fa fa-2x fa-chevron-right arrow-color'></i>
         </div>
-    </div>
-        <div class="owl-carousel">
+        <div class="owl-carousel" id="gallery">
             {% for image in images %}
                 <div class="gallery animate-box">
 

@@ -22,19 +22,6 @@ $(document).ready(function () {
                     // you don't need to add "opener" option if this code matches your needs, it's defailt one.
                     return openerElement.is('img') ? openerElement : openerElement.find('img');
                 }
-            },
-            callbacks: {
-                open: function () {
-                    $("#nav-arrows").hide();
-                    // Will fire when this exact popup is opened
-                    // this - is Magnific Popup object
-                },
-                close: function () {
-
-                    $("#nav-arrows").show();
-                    // Will fire when popup is closed
-                }
-                // e.t.c.
             }
         });
     };

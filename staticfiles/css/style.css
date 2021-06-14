@@ -2021,6 +2021,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     background-color: rgba(109, 126, 145, .5);
     cursor: pointer;
+    width: 48px;
+    position: relative;
+    z-index: 1000;
 }
 
 .arrow-color{

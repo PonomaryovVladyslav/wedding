@@ -327,14 +327,23 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
-
-    $("#click-previous").click(function (event) {
+    let cp = $("#click-previous");
+    cp.click(function (event) {
         owl.trigger('prev.owl.carousel');
     })
-    $("#click-forward").click(function (event){
+    let cf = $("#click-forward");
+    cf.click(function (event){
         owl.trigger('next.owl.carousel')
     })
-
+    let g = $("#gallery");
+    var f_top = 305 / 2 + cf.height() / 4;
+    var f_left = g.width() - cf.width() - 25;
+    var p_top = 305 / 2 + cf.height() / 4 + cf.height() + 5;
+    var p_left = 20;
+    cf.css('top', f_top);
+    cf.css('left', f_left);
+    cp.css('top', p_top);
+    cp.css('left', p_left);
 
 
 
