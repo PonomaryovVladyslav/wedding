@@ -332,7 +332,7 @@
         owl.trigger('prev.owl.carousel');
     })
     let cf = $("#click-forward");
-    cf.click(function (event){
+    cf.click(function (event) {
         owl.trigger('next.owl.carousel')
     })
     let g = $("#gallery");
@@ -344,8 +344,7 @@
     cf.css('left', f_left);
     cp.css('top', p_top);
     cp.css('left', p_left);
-
-
+    $("#to-set-height").css('height', $("#to-count-height").height() / 2)
 
 
     // Document on load.
