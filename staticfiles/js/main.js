@@ -328,6 +328,14 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
 
+    $("#click-previous").click(function (event) {
+        owl.trigger('prev.owl.carousel');
+    })
+    $("#click-forward").click(function (event){
+        owl.trigger('next.owl.carousel')
+    })
+
+
 
 
 

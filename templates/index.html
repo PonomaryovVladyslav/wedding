@@ -543,9 +543,18 @@
     </div>
 
     <div class="container-fluid">
+    <div class="nav-arrows" id="nav-arrows">
+        <div class="arrow-border" id="click-previous">
+            <i class='fa fa-2x fa-chevron-left arrow-color'></i>
+        </div>
+        <div class="arrow-border" id="click-forward">
+            <i class='fa fa-2x fa-chevron-right arrow-color'></i>
+        </div>
+    </div>
         <div class="owl-carousel">
             {% for image in images %}
                 <div class="gallery animate-box">
+
                     {% if image.image and image.image_cropped %}
                         <a class="image-popup gallery-img" href="{{ image.image_cropped.url }}"
                            data-mfp-src="{{ image.image.url }}"><img

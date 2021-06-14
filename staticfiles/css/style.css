@@ -2006,3 +2006,27 @@ h1, h2, h3, h4, h5, h6 {
 #scrollTop:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+.nav-arrows{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -160px;
+    z-index: 100000000;
+    padding: 0 20px;
+}
+
+.arrow-border{
+    border: 2px solid #f0e1ab;
+    border-radius: 10px;
+    background-color: rgba(109, 126, 145, .5);
+    cursor: pointer;
+}
+
+.arrow-color{
+    color: #f0e1ab;
+    padding: 10px;
+}
+.arrow-border:hover {
+    background-color: rgba(109, 126, 145, 1);
+}
