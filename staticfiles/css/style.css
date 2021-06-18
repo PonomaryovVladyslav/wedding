@@ -2033,3 +2033,23 @@ h1, h2, h3, h4, h5, h6 {
 .arrow-border:hover {
     background-color: rgba(109, 126, 145, 1);
 }
+
+.transfers{
+    display: flex;
+    width: 100%;
+}
+
+.transfers-block {
+    width: 50%;
+}
+
+.transfers-from{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .transfers {
+        flex-direction: column;
+    }
+}
