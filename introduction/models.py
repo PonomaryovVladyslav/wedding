@@ -2,12 +2,6 @@ from io import BytesIO
 
 from django.conf import settings
 from django.db import models
-from PIL import Image
-from django.core.files.uploadedfile import InMemoryUploadedFile
-from django.core.files.base import ContentFile
-
-# Create your models here.
-
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.core.files.base import ContentFile
@@ -64,3 +58,13 @@ class GalleryImage(models.Model):
 
     def __str__(self):
         return self.image.name.split('/')[-1]
+
+
+class Quiz(models.Model):
+    name = models.CharField(max_length=100)
+    count = models.PositiveSmallIntegerField()
+    need_room_in_kh = models.BooleanField(default=False)
+    need_room_in_penates = models.BooleanField(default=False)
+    transfer_to = models.BooleanField(default=False)
+    transfer_from_first_day = models.BooleanField(default=False)
+    transfer_from_second_day = models.BooleanField(default=False)
