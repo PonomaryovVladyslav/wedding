@@ -2036,7 +2036,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .transfers{
     display: flex;
-    width: 100%;
+    width: 70vw;
 }
 
 .transfers-block {
