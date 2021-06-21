@@ -345,7 +345,26 @@
     cp.css('top', p_top);
     cp.css('left', p_left);
     $("#to-set-height").css('height', $("#to-count-height").height() / 2)
+    var qf = $("#questions-form");
+    qf.submit(function (e) {
+        e.preventDefault();
+        var data = qf.serializeArray();
+        var data_to_send = {
+            "name": data.filter(ai => ai.name === 'name')[0].value,
+            "count": data.filter(ai => ai.name === 'count')[0].value,
+            "need_room_in_kh": data.filter(ai => ai.name === 'room_in_kh')[0].value === 'yes',
+            "need_room_in_penates": data.filter(ai => ai.name === 'room_in_penates')[0].value === 'yes',
+            "transfer_to": data.filter(ai => ai.name === 'transfer_to')[0].value === 'yes',
+            "transfer_from_first_day": data.filter(ai => ai.name === 'transfer_from')[0].value === 'yes_1st',
+            "transfer_from_second_day": data.filter(ai => ai.name === 'transfer_from')[0].value === 'yes_2nd',
+        };
+        $.post( "/api/quiz/", data_to_send).done(function (data){
+            qf.hide();
+            $("#thanks").show();
+            document.getElementById("qbootstrap-questions").scrollIntoView();
+        });
 
+    });
 
     // Document on load.
     $(function () {
