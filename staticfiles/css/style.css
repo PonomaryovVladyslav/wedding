@@ -2057,6 +2057,7 @@ h1, h2, h3, h4, h5, h6 {
     .transfers {
         flex-direction: column;
         margin: 0;
+        width: 100%;
     }
     .transfers-block{
         width: 100%;
