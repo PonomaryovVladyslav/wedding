@@ -2131,3 +2131,10 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid #FF847C;
     border-radius: 100px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .myquestion div {
+        flex-direction: column;
+    }
+}
