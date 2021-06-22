@@ -2062,3 +2062,23 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 }
+
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+
+.guest-inputs{
+    display: flex;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+.guests-margin{
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 7px;
+}
