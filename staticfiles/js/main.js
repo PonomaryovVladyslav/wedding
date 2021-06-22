@@ -358,7 +358,7 @@
             "transfer_from_first_day": data.filter(ai => ai.name === 'transfer_from')[0].value === 'yes_1st',
             "transfer_from_second_day": data.filter(ai => ai.name === 'transfer_from')[0].value === 'yes_2nd',
         };
-        $.post( "/api/quiz/", data_to_send).done(function (data){
+        $.post("/api/quiz/", data_to_send).done(function (data) {
             qf.hide();
             $("#thanks").show();
             document.getElementById("qbootstrap-questions").scrollIntoView();
@@ -366,6 +366,131 @@
 
     });
 
+    var q1solve = function (){
+        var data = qf.serializeArray();
+        var a = data.filter(ai => ai.name === 'room_in_kh')[0].value;
+        var q1a1 = $('#q1-a1');
+        var q1a2 = $('#q1-a2');
+        if (a === 'no') {
+            if(!q1a1.hasClass('choiced-radio')){
+                q1a1.addClass('choiced-radio');
+            }
+            if(q1a2.hasClass('choiced-radio')){
+                q1a2.removeClass('choiced-radio');
+            }
+
+        } else {
+            if(q1a1.hasClass('choiced-radio')){
+                q1a1.removeClass('choiced-radio');
+            }
+            if(!q1a2.hasClass('choiced-radio')){
+                q1a2.addClass('choiced-radio');
+            }
+        }
+    }
+    var q2solve = function (){
+        var data = qf.serializeArray();
+        var a = data.filter(ai => ai.name === 'room_in_penates')[0].value;
+        var q2a1 = $('#q2-a1');
+        var q2a2 = $('#q2-a2');
+        if (a === 'no') {
+            if(!q2a1.hasClass('choiced-radio')){
+                q2a1.addClass('choiced-radio');
+            }
+            if(q2a2.hasClass('choiced-radio')){
+                q2a2.removeClass('choiced-radio');
+            }
+
+        } else {
+            if(q2a1.hasClass('choiced-radio')){
+                q2a1.removeClass('choiced-radio');
+            }
+            if(!q2a2.hasClass('choiced-radio')){
+                q2a2.addClass('choiced-radio');
+            }
+        }
+    }
+    var q3solve = function (){
+        var data = qf.serializeArray();
+        var a = data.filter(ai => ai.name === 'transfer_to')[0].value;
+        var q3a1 = $('#q3-a1');
+        var q3a2 = $('#q3-a2');
+        if (a === 'no') {
+            if(!q3a1.hasClass('choiced-radio')){
+                q3a1.addClass('choiced-radio');
+            }
+            if(q3a2.hasClass('choiced-radio')){
+                q3a2.removeClass('choiced-radio');
+            }
+
+        } else {
+            if(q3a1.hasClass('choiced-radio')){
+                q3a1.removeClass('choiced-radio');
+            }
+            if(!q3a2.hasClass('choiced-radio')){
+                q3a2.addClass('choiced-radio');
+            }
+        }
+    }
+    var q4solve = function (){
+        var data = qf.serializeArray();
+        var a = data.filter(ai => ai.name === 'transfer_from')[0].value;
+        var q4a1 = $('#q4-a1');
+        var q4a2 = $('#q4-a2');
+        var q4a3 = $('#q4-a3');
+        if (a === 'no') {
+            if(!q4a1.hasClass('choiced-radio')){
+                q4a1.addClass('choiced-radio');
+            }
+            if(q4a2.hasClass('choiced-radio')){
+                q4a2.removeClass('choiced-radio');
+            }
+            if(q4a3.hasClass('choiced-radio')){
+                q4a3.removeClass('choiced-radio');
+            }
+
+        }
+        if (a === 'yes_1st') {
+            if(q4a1.hasClass('choiced-radio')){
+                q4a1.removeClass('choiced-radio');
+            }
+            if(!q4a2.hasClass('choiced-radio')){
+                q4a2.addClass('choiced-radio');
+            }
+            if(q4a3.hasClass('choiced-radio')){
+                q4a3.removeClass('choiced-radio');
+            }
+
+        }
+        if (a === 'yes_2nd') {
+            if(q4a1.hasClass('choiced-radio')){
+                q4a1.removeClass('choiced-radio');
+            }
+            if(q4a2.hasClass('choiced-radio')){
+                q4a2.removeClass('choiced-radio');
+            }
+            if(!q4a3.hasClass('choiced-radio')){
+                q4a3.addClass('choiced-radio');
+            }
+
+        }
+    }
+    q1solve();
+    q2solve();
+    q3solve();
+    q4solve();
+    $('input[name="room_in_kh"]').change(function () {
+        q1solve();
+    });
+    $('input[name="room_in_penates"]').change(function () {
+        q2solve();
+    });
+    $('input[name="transfer_to"]').change(function () {
+        q3solve();
+    });
+    $('input[name="transfer_from"]').change(function () {
+        q4solve();
+    });
     // Document on load.
     $(function () {
 

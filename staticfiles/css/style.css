@@ -1982,32 +1982,31 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-right-radius: 10px;
 }
 
-.owl-carousel
-{
+.owl-carousel {
     touch-action: manipulation;
 }
 
 #scrollTop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #111117; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #111117; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
 }
 
 #scrollTop:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
-.nav-arrows{
+.nav-arrows {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -2016,7 +2015,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-.arrow-border{
+.arrow-border {
     border: 2px solid #f0e1ab;
     border-radius: 10px;
     background-color: rgba(109, 126, 145, .5);
@@ -2026,15 +2025,16 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-.arrow-color{
+.arrow-color {
     color: #f0e1ab;
     padding: 10px;
 }
+
 .arrow-border:hover {
     background-color: rgba(109, 126, 145, 1);
 }
 
-.transfers{
+.transfers {
     display: flex;
     width: 70vw;
 }
@@ -2043,12 +2043,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
-.transfers-from{
+.transfers-from {
     display: flex;
     justify-content: space-evenly;
 }
 
-.transfers h3{
+.transfers h3 {
     margin: 0;
     padding-bottom: 15px;
 }
@@ -2059,27 +2059,75 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
         width: 100%;
     }
-    .transfers-block{
+
+    .transfers-block {
         width: 100%;
     }
 }
 
-.inputs{
+.inputs {
     display: flex;
     justify-content: center;
 }
 
-.guest-inputs{
+.guest-inputs {
     display: flex;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-   opacity: 1;
+    opacity: 1;
 }
 
-.guests-margin{
+.guests-margin {
     margin-top: 10px;
     margin-bottom: 0;
     margin-left: 7px;
+}
+
+.myquestion {
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 0;
+}
+
+.myquestion:after {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    content: '';
+    background: #f4f3e2;
+    z-index: -1;
+}
+
+.myquestion div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myquestion div input {
+    display: none;
+}
+
+.myquestion div label {
+    padding: 0 10px;
+}
+
+.myquestion h3 {
+    font-size: 40px;
+    color: #FF847C;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.myquestion-pink:after {
+    background: #fef6f8;
+}
+
+.choiced-radio {
+    border: 1px solid #FF847C;
+    border-radius: 100px;
 }
