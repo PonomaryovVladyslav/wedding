@@ -2043,6 +2043,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
+.transfers-block h1{
+    color: #FF847C;
+}
+
 .transfers-from {
     display: flex;
     justify-content: space-evenly;
