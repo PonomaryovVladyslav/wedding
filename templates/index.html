@@ -435,20 +435,53 @@
                     <h2>Программа мероприятия</h2>
 {#                    <div class="row">#}
 {#                        <div class="col-md-10 col-md-offset-1 subtext">#}
-{#                            <h3>Церемонию и вечеринку мы решили проводить в загороднем комплексе <a#}
-{#                                    href="https://www.penates-kharkiv.com.ua/">ГД Пенаты</a></h3>#}
+{#                            <h3>Церемонию и вечеринку мы решили проводить в загороднем комплексе </h3>#}
 {#                        </div>#}
 {#                    </div>#}
                 </div>
             </div>
         </div>
         <div class="row row-bottom-padded-md">
-            <div class="col-md-6 text-center animate-box">
+            <div class="text-center animate-box">
                 <div class="wedding-events">
+{#                    <div class="ceremony-bg"#}
+{#                         style="background-image: url('{% static 'images/penaty-min.jpg' %}');"></div>#}
                     <div class="ceremony-bg"
-                         style="background-image: url('{% static 'images/wed-ceremony.jpg' %}');"></div>
+                         style="content: url('{% static 'images/penaty-min.jpg' %}'); "></div>
                     <div class="desc">
-                        <h3>Свадебная церемония</h3>
+                        <h3>Прибытие в гостевой дом <a href="https://www.penates-kharkiv.com.ua/">Пенаты</a></h3>
+                        <div class="row">
+                            <div class="col-md-2 col-md-push-5">
+                                <div class="icon-tip">
+                                    <span class="icon" style="margin-top: 20%;"><i class="fas fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-md-pull-1">
+                                <div class="date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Суббота</span>
+                                    <span>11 Сентября 2021</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-md-pull-1">
+                                <div class="date">
+                                    <i class="fas fa-clock"></i>
+                                    <span>15:00</span>
+                                </div>
+                            </div>
+                        </div>
+{#                        <p>Церемония пройдёт на улице, поэтому ждём вас в удобной обуви и с отличным настроением. Ждём#}
+{#                            вас, по возможности, в цветах нашей свадьбы.</p>#}
+                        <p>Мы старались сделать праздник незабываемым, поэтому выбрали уникальное место в самом сердце национального природного парка Гомольшанские леса</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center animate-box">
+                <div class="wedding-events flex-reverse">
+                    <div class="ceremony-bg"
+                         style="content: url('{% static 'images/wed-ceremony.jpg' %}');"></div>
+                    <div class="desc pink-panel">
+                        <h3>Выездная церемония</h3>
                         <div class="row">
                             <div class="col-md-2 col-md-push-5">
                                 <div class="icon-tip">
@@ -466,19 +499,18 @@
                                 <div class="date">
                                     <i class="fas fa-clock"></i>
                                     <span>16:00</span>
-                                    <span>17:00</span>
                                 </div>
                             </div>
                         </div>
-                        <p>Церемония пройдёт на улице, поэтому ждём вас в удобной обуви и с отличным настроением. Ждём
-                            вас, по возможности, в цветах нашей свадьбы.</p>
+                        <p>Обратите внимание, что церемония пройдёт на улице, поэтому ждём вас в удобной обуви и с отличным настроением.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 text-center animate-box">
+
+            <div class="text-center animate-box">
                 <div class="wedding-events">
                     <div class="ceremony-bg"
-                         style="background-image: url('{% static 'images/wed-party.jpg' %}');"></div>
+                         style="content: url('{% static 'images/wed-party.jpg' %}');"></div>
                     <div class="desc">
                         <h3>Вечеринка</h3>
                         <div class="row">
@@ -498,7 +530,6 @@
                                 <div class="date">
                                     <i class="fas fa-clock"></i>
                                     <span>17:00</span>
-                                    <span>Как пойдёт</span>
                                 </div>
                             </div>
                         </div>
@@ -507,15 +538,46 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="map" class="qbootstrap-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.1338445525394!2d36.33363781566643!3d49.59522537936657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127612a1de9fa2f%3A0xc50878448d741686!2z0JPQvtGB0YLRjNC-0LLQuNC5INC00ZbQvCAi0J_QtdC90LDRgtC4Ig!5e0!3m2!1sru!2sua!4v1621344340543!5m2!1sru!2sua"
-                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="text-center animate-box">
+                <div class="wedding-events flex-reverse">
+                    <div class="ceremony-bg"
+                         style="content: url('{% static 'images/2nd_day-min.jpg' %}');"></div>
+                    <div class="desc pink-panel">
+                        <h3>Второй день</h3>
+                        <div class="row">
+                            <div class="col-md-2 col-md-push-5">
+                                <div class="icon-tip">
+                                    <span class="icon" style="margin-top: 20%;"><i class="fas fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-md-pull-1">
+                                <div class="date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Воскресенье</span>
+                                    <span>12 Сентября 2021</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-md-pull-1">
+                                <div class="date">
+                                    <i class="fas fa-clock"></i>
+                                    <span>11:00</span>
+                                    <span>21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Нам важно, чтобы гости чувствовали себя комфортно, поэтому на следующий день предлагаем окунуться в теплые купели, нырнуть в освежающий бассейн(для этого понадобятся купальники), попробовать вкусный шашлык. Обратите внимание, что номера надо освободить до 12.00.</p>
+                    </div>
                 </div>
             </div>
         </div>
+{#        <div class="row"> #}
+{#            <div class="col-md-12">#}
+{#                <div id="map" class="qbootstrap-map">#}
+{#                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.1338445525394!2d36.33363781566643!3d49.59522537936657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127612a1de9fa2f%3A0xc50878448d741686!2z0JPQvtGB0YLRjNC-0LLQuNC5INC00ZbQvCAi0J_QtdC90LDRgtC4Ig!5e0!3m2!1sru!2sua!4v1621344340543!5m2!1sru!2sua"#}
+{#                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
     </div>
 </div>
 
