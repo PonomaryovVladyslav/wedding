@@ -2167,3 +2167,21 @@ input[type=number]::-webkit-outer-spin-button {
 .flex-reverse{
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 768px) {
+    .wedding-events {
+        flex-direction: column !important;
+        margin-bottom: 0 !important;
+    }
+    .wedding-events .ceremony-bg{
+        height: auto !important;
+        width: 100% !important;
+    }
+    #qbootstrap-when-where{
+        padding-bottom: 0;
+    }
+    #zero-mobile-padding{
+        padding-bottom: 0;
+    }
+}
+
