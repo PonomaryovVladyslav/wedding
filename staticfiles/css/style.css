@@ -2043,7 +2043,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
-.transfers-block h1{
+.transfers-block h1 {
     color: #FF847C;
 }
 
@@ -2144,11 +2144,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-.pink-panel::after{
+.pink-panel::after {
     background: #fef6f8 !important;
 }
 
-.wedding-events{
+.wedding-events {
     display: flex;
 }
 
@@ -2157,14 +2157,14 @@ input[type=number]::-webkit-outer-spin-button {
     width: 50%;
 }
 
-.desc::after{
-    top:0 !important;
+.desc::after {
+    top: 0 !important;
     bottom: 0 !important;
-    left:0 !important;
+    left: 0 !important;
     right: 0 !important;
 }
 
-.flex-reverse{
+.flex-reverse {
     flex-direction: row-reverse;
 }
 
@@ -2173,15 +2173,26 @@ input[type=number]::-webkit-outer-spin-button {
         flex-direction: column !important;
         margin-bottom: 0 !important;
     }
-    .wedding-events .ceremony-bg{
+
+    .wedding-events .ceremony-bg {
         height: auto !important;
         width: 100% !important;
     }
-    #qbootstrap-when-where{
+
+    #qbootstrap-when-where {
         padding-bottom: 0;
     }
-    #zero-mobile-padding{
+
+    #zero-mobile-padding {
         padding-bottom: 0;
     }
 }
 
+
+@media screen and (min-width: 768px) {
+
+    #navbar {
+        display: flex !important;
+        justify-content: center;
+    }
+}
