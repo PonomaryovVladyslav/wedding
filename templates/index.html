@@ -96,15 +96,14 @@
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse"
                    data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="{% url 'index' %}">Свадьба</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#" data-nav-section="home"><span>В начало</span></a></li>
                     <li><a href="#" data-nav-section="groom-bride"><span>Жених и невеста</span></a></li>
                     <li><a href="#" data-nav-section="story"><span>Love Story</span></a></li>
-                    <li><a href="#" data-nav-section="people"><span>Команды</span></a></li>
-                    <li><a href="#" data-nav-section="when-where"><span>Где и когда</span></a></li>
+                    <li><a href="#" data-nav-section="people"><span>Почётные свидетели</span></a></li>
+                    <li><a href="#" data-nav-section="when-where"><span>Программа мероприятия</span></a></li>
+                    <li><a href="#" data-nav-section="team"><span>Наша команда</span></a></li>
                     <li><a href="#" data-nav-section="rsvp"><span>Как добраться?</span></a></li>
                     <li><a href="#" data-nav-section="gallery"><span>Галерея</span></a></li>
                 </ul>
@@ -520,6 +519,7 @@
     </div>
 </div>
 
+<div id="qbootstrap-questions" data-section="team"></div>
 
 <div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp"
      style="background-image: url('{% static 'images/cover_bg_1.jpg' %}');">
@@ -553,14 +553,14 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Если вам необходим трансфер укажите это в форме ниже, пожалуйста</h3>
+                    <h3>Если вам необходим трансфер укажите это в <a href="#" data-nav-section="question"><span>форме ниже</span></a>, пожалуйста</h3>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div id="qbootstrap-questions" data-section="rsvp">
+<div id="qbootstrap-questions" data-section="question">
     <div class="overlay"></div>
     <div>
         <div class="row animate-box" style="margin: 0">
